@@ -8,6 +8,12 @@ Como siguiente paso, se emplea Node-Red, para la cración de un flow, denominado
 en donde se podran visualizar multiples eventos, mediante las estructuras de Dashboard
 #### Dashboard
 estos elementos son 
-### Texto
-### Gauge
-### Graficos
+### _Texto_
+### _Gauge_
+### _Graficos_
+
+## Paso3:
+Finalmente despues de editar los valores y las distintas propiedades en las herramientas de objeto
+tenemos la muestra de resultados seleccionando la ventana correspondiente
+
+###### anexo captura de resultados
