@@ -16,4 +16,4 @@ estos elementos son
 Finalmente despues de editar los valores y las distintas propiedades en las herramientas de objeto
 tenemos la muestra de resultados seleccionando la ventana correspondiente
 
-###### anexo captura de resultados
+#### anexo captura de resultados
