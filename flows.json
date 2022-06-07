@@ -1,0 +1,237 @@
+[
+    {
+        "id": "7d7be1745ed28d55",
+        "type": "tab",
+        "label": "Flow 3 Para repositorio",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7f43091ae93fdfc0",
+        "type": "inject",
+        "z": "7d7be1745ed28d55",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Text of test by ORLANDO R G7",
+        "payloadType": "str",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "9fc08e38f82745a2"
+            ]
+        ]
+    },
+    {
+        "id": "6ac6ac541c23f69d",
+        "type": "inject",
+        "z": "7d7be1745ed28d55",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "390cce466d09f00f",
+                "11c44cf69139abbf"
+            ]
+        ]
+    },
+    {
+        "id": "5752f0598b396cb4",
+        "type": "inject",
+        "z": "7d7be1745ed28d55",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "390cce466d09f00f",
+                "11c44cf69139abbf"
+            ]
+        ]
+    },
+    {
+        "id": "40aaced84c2a0360",
+        "type": "inject",
+        "z": "7d7be1745ed28d55",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "390cce466d09f00f",
+                "11c44cf69139abbf"
+            ]
+        ]
+    },
+    {
+        "id": "9fc08e38f82745a2",
+        "type": "ui_text",
+        "z": "7d7be1745ed28d55",
+        "group": "fc1bb8d7d535a582",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "390cce466d09f00f",
+        "type": "ui_gauge",
+        "z": "7d7be1745ed28d55",
+        "name": "",
+        "group": "fc1bb8d7d535a582",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gaugeG7",
+        "label": "Valores",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 380,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "11c44cf69139abbf",
+        "type": "ui_chart",
+        "z": "7d7be1745ed28d55",
+        "name": "",
+        "group": "fc1bb8d7d535a582",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chartG7",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc1bb8d7d535a582",
+        "type": "ui_group",
+        "name": "Text Group 7",
+        "tab": "98700887e0f42a64",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98700887e0f42a64",
+        "type": "ui_tab",
+        "name": "Flow3G7",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
